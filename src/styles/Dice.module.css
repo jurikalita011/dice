@@ -1,0 +1,92 @@
+.dice {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 15rem;
+  width: 15rem;
+  border-radius: 5%;
+  place-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  > div {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+  }
+}
+
+.dot1 {
+  > div:nth-child(5) {
+    display: block;
+    background-color: black;
+  }
+}
+
+.dot2 {
+  > div:nth-child(4),
+  > div:nth-child(6) {
+    display: block;
+    background-color: black;
+  }
+}
+
+.dot3 {
+  > div:nth-child(4),
+  > div:nth-child(5),
+  > div:nth-child(6) {
+    display: block;
+    background-color: black;
+  }
+}
+
+.dot4 {
+  > div:nth-child(1),
+  > div:nth-child(3),
+  > div:nth-child(7),
+  > div:nth-child(9) {
+    display: block;
+    background-color: black;
+  }
+}
+.dot5 {
+  > div:nth-child(2n + 1) {
+    display: block;
+    background-color: black;
+  }
+}
+
+.dot6 {
+  > div {
+    display: block;
+    background-color: black;
+  }
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5%;
+  width: 8rem;
+  height: 4rem;
+  background-image: linear-gradient(
+    to right,
+    #90a4ae,
+    #cfd8dc,
+    #eceff1,
+    #fafafa,
+    #efebe9
+  );
+  border: none;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-image: linear-gradient(
+    to right,
+    #607d8b,
+    #90a4ae,
+    #b0bec5,
+    #eceff1
+  );
+  color: aliceblue;
+}
