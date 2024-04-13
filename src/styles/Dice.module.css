@@ -57,7 +57,8 @@
 }
 
 .dot6 {
-  > div {
+  > div:nth-child(-n + 3),
+  > div:nth-child(n + 7):nth-child(-n + 9) {
     display: block;
     background-color: black;
   }
