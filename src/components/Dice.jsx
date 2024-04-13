@@ -12,7 +12,7 @@ export const Dice = () => {
   return (
     <>
       <div className={`${styles.dice} ${styles["dot" + dice]}`}>
-        {diceArray.map((el, ind) => {
+        {diceArray.map((_, ind) => {
           return <div key={ind}></div>;
         })}
       </div>
